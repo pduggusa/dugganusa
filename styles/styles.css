@@ -1,54 +1,53 @@
 body {
-  font-family: 'Orbitron', sans-serif;
-  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-  color: #eee;
+  font-family: 'Comic Neue', sans-serif;
   margin: 0;
-  padding: 0;
+  background: #f0f8ff;
+  color: #333;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+  background-color: #cbe7ff;
+}
+
+.avatar {
+  max-width: 200px;
+  height: auto;
+}
+
+.speech-bubble {
+  margin-top: 1em;
+  background: #fff;
+  padding: 10px 15px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+  font-size: 1.2em;
+  max-width: 300px;
   text-align: center;
 }
 
-header {
-  padding: 2rem;
-  background-color: rgba(0, 0, 0, 0.5);
+.resume-scene .responsive-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
-nav .console-button {
-  display: inline-block;
-  background: #00ff99;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  margin: 1rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  cursor: pointer;
-  border-radius: 8px;
-  text-decoration: none;
-  color: #222;
-  transition: transform 0.2s ease;
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: #e0f7fa;
 }
 
-.console-button.pulse {
-  animation: pulse 0.4s infinite;
-}
-
-.console-button.flash {
-  background: #fff;
-  color: #000;
-}
-
-@keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.1); }
-  100% { transform: scale(1); }
-}
-
-#headshot {
-  max-width: 200px;
-  border-radius: 50%;
-  margin-bottom: 1rem;
-  transition: box-shadow 0.3s ease;
-}
-
-#headshot.glow {
-  box-shadow: 0 0 20px #00ffcc;
+@media screen and (min-width: 768px) {
+  .hero {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .speech-bubble {
+    margin-left: 2em;
+  }
 }
