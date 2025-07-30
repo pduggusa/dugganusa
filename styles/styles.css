@@ -1,51 +1,54 @@
 body {
   font-family: 'Orbitron', sans-serif;
-  background-color: #e0f7fa;
-  color: #333;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #eee;
   margin: 0;
   padding: 0;
-}
-
-.top-banner {
-  background-color: #006064;
-  color: #fff;
-  font-size: 1rem;
-  padding: 10px;
   text-align: center;
 }
 
-.bio-panel, .timeline-panel, .projects-console {
-  padding: 40px;
-  text-align: center;
+header {
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-.nav-button {
+nav .console-button {
   display: inline-block;
-  margin-top: 15px;
-  padding: 10px 20px;
-  background-color: #ff5722;
-  color: #fff;
-  border-radius: 5px;
-  text-decoration: none;
-}
-
-.patrick-headshot {
-  max-width: 200px;
-  border-radius: 10px;
-}
-
-.farnsworth-quip {
-  font-size: 0.85rem;
-  font-style: italic;
-  color: #00838f;
-  margin-top: 10px;
-}
-
-.project-btn {
-  margin: 15px;
-  padding: 15px 30px;
-  background-color: #ff9800;
-  color: #fff;
+  background: #00ff99;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  margin: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
   border-radius: 8px;
   text-decoration: none;
+  color: #222;
+  transition: transform 0.2s ease;
+}
+
+.console-button.pulse {
+  animation: pulse 0.4s infinite;
+}
+
+.console-button.flash {
+  background: #fff;
+  color: #000;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+#headshot {
+  max-width: 200px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  transition: box-shadow 0.3s ease;
+}
+
+#headshot.glow {
+  box-shadow: 0 0 20px #00ffcc;
 }
