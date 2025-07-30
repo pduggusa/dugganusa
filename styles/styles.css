@@ -1,0 +1,79 @@
+/* ==== Futurama-Inspired Theme ==== */
+
+body {
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    background-color: #0a192f;
+    color: #ffffff;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    color: #ffe600;
+  }
+  
+  a {
+    color: #00ffe5;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #ff6f61;
+  }
+  
+  /* ==== Hero Section ==== */
+  
+  .hero {
+    background-color: #008080;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+    max-width: 1000px;
+  }
+  
+  .hero-portrait {
+    width: 200px;
+    border: 5px solid #ffe600;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #ffe600;
+  }
+  
+  .hero-text h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+  
+  .tagline {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  .button.download {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: white;
+    border-radius: 8px;
+    text-shadow
+  }
+  
+  .active-float {
+    animation: float-icon 1s ease-in-out infinite;
+  }
+  
+  @keyframes float-icon {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+  }
+  
